@@ -1,0 +1,27 @@
+.sidebar {
+    position: absolute;
+    overflow:hidden;
+    width: 240px;
+    height: 110%;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+.sidebar-inner {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav {
+    padding-top: 10px;
+    flex: 1 1 auto;
+}
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
