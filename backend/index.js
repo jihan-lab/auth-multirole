@@ -17,6 +17,10 @@ const store = new sessionStore({
   db: db,
 });
 
+// (async () => {
+//   await db.sync();
+// })();
+
 try {
   await db.authenticate();
   console.log("Database connected...");
@@ -45,6 +49,8 @@ app.use(express.json());
 app.use(AuthRoute);
 app.use(UserRoute);
 app.use(ProductRoute);
+
+// store.sync();
 
 app.listen(process.env.APP_PORT, () => {
   console.log("Server running at port 5000");
